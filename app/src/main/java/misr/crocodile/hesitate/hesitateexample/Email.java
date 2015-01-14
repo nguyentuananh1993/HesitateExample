@@ -1,6 +1,7 @@
 package misr.crocodile.hesitate.hesitateexample;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -47,6 +48,12 @@ public class Email extends Activity implements View.OnClickListener {
                 + out
                 + ".  Oh also if you get bored you should check out www.mybringback.com"
                 + '\n' + "PS. I think I love you...   :(";
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.putExtra(Intent.EXTRA_EMAIL,emailaddress);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "I hate you");
+        emailIntent.setType("plain/text");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, message);
+        startActivity(emailIntent);
 
     }
 

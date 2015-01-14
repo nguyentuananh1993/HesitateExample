@@ -11,7 +11,7 @@ import android.widget.ListView;
  * Created by misrc_000 on 1/12/15.
  */
 public class Menu extends ListActivity {
-    String classes[] = {"startingPoint", "TextPlay","Email","example3","example4","example5","example6"};
+    String classes[] = {"startingPoint", "TextPlay","Email","Camera","Data","example5","example6"};
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);

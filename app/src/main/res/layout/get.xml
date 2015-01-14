@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etSend"
+        android:text="Start Activity" />
+
+    <Button
+        android:id="@+id/btnSAFR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnSA"
+        android:layout_toLeftOf="@+id/btnSA"
+        android:text="Start Activity for Result" />
+
+    <TextView
+        android:id="@+id/tvGot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnSA"
+        android:layout_alignRight="@+id/btnSA"
+        android:layout_below="@+id/btnSA"
+        android:text="New Text" />
+</RelativeLayout>
