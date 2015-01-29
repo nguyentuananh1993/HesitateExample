@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="AnhNT is the coolest person I know. If you want to send him a comment truck full of bacon. he would love that. If you can&apos;t afford to do so, he would also love if you checked yout this website"
+        android:id="@+id/textView" />
+</LinearLayout>

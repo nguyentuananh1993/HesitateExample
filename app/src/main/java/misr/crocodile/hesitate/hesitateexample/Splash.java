@@ -2,8 +2,10 @@ package misr.crocodile.hesitate.hesitateexample;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 
 /**
  * Created by misrc_000 on 1/11/15.
@@ -15,7 +17,11 @@ public class Splash extends Activity {
         super.onCreate(savedInstanceState);
         ourSong = MediaPlayer.create(Splash.this,R.raw.splash_sound);
         setContentView(R.layout.splash);
-        ourSong.start();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        boolean check = prefs.getBoolean("checkbox",false);
+        if(check){
+            ourSong.start();
+        }
         Thread timer = new Thread(){
             public void run(){
                 try{

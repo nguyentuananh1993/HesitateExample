@@ -9,8 +9,7 @@ import android.widget.EditText;
 
 public class Email extends Activity implements View.OnClickListener {
 
-    EditText personsEmail, intro, personsName, stupidThings, hatefulAction,
-            outro;
+    EditText personsEmail, intro, personsName, stupidThings, hatefulAction,outro;
     String emailAdd, beginning, name, stupidAction, hatefulAct, out;
     Button sendEmail;
 

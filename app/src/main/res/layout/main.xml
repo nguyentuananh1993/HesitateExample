@@ -1,32 +1,35 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:orientation="vertical"
     android:padding="@dimen/activity_horizontal_margin"
     tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
         android:id="@+id/displayText"
-        android:layout_gravity="center"
-        android:textSize="20sp"
-    />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add"
+        android:layout_gravity="center"
+        android:text="@string/hello_world"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_margin="10dp"
         android:id="@+id/btnAdd"
-        android:layout_gravity="center"
-    />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sub"
-        android:id="@+id/btnSub"
         android:layout_gravity="center"
-    />
+        android:background="@drawable/custom_button"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:text="Sub" />
 
 
 </LinearLayout>
