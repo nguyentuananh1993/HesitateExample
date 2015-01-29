@@ -16,7 +16,7 @@ import android.widget.ListView;
  * Created by misrc_000 on 1/12/15.
  */
 public class MenuInflat extends ListActivity {
-    String classes[] = {"startingPoint", "TextPlay", "Email", "Camera", "Data", "GFX", "example6"};
+    String classes[] = {"startingPoint", "TextPlay", "Email", "Camera", "Data", "GFX", "GFXSurface"};
 
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
